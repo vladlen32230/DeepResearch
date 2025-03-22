@@ -1,0 +1,4 @@
+- Use uv instead of python or pip.
+- Make code as simple as possible.
+- Write only code that accomplishes provided task. No surplus code.
+- Do not create example files.
