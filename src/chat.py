@@ -30,6 +30,7 @@ def answer_question(
             questions = [question]
 
         chunks = retrieve_chunks(questions, n_results=n_chunks)
+        print(f'Retrieved {len(chunks)} chunks from RAG')
         rag_context = "\n\n".join(chunks)
     
     # Search the internet for additional context if enabled

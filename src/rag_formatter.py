@@ -18,5 +18,4 @@ formatter = Agent(
 
 def format_rag_questions(question: str) -> list[str]:
     questions = formatter.run_sync(question).data
-    print(f'Retrieved {len(questions)} chunks from RAG')
     return questions
