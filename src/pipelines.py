@@ -12,9 +12,9 @@ def process_question(user_question: str) -> str:
 
     for topic in topics:
         print(f'Searching the internet for information on the topic: {topic}')
-        topic_research, sources = research_topic(topic, user_question)
+        topic_research, new_sources = research_topic(topic, user_question)
         detailed_answers.append(f"## {topic}\n\n{topic_research}")
-        sources.extend(sources)
+        sources.extend(new_sources)
     
     # Combine all research into one comprehensive answer
     final_answer = (
